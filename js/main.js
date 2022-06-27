@@ -30,6 +30,7 @@ var app = new Vue ({
         addOnClick() {
             this.newInput = {text: this.userInput, done: false} 
             this.todos.push(this.newInput);
+            this.userInput = ''
         }
     }
 })
