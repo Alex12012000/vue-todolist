@@ -21,7 +21,7 @@
             <!-- list -->
             <div class="list">
                 <ul>
-                    <li v-for="todo, index in todos" >
+                    <li v-for="todo, index in todos" @click="switchDone(index)">
                         <span :class="{ 'active': todo.done}">{{todo.text}}</span>
                         <span><i @click="removeOnClick(index)" class="fa fa-times" aria-hidden="true"></i></span>
                     </li>

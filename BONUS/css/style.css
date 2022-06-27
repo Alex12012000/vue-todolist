@@ -48,6 +48,6 @@ li {
     text-decoration: line-through;
 }
 
-i {
+span {
     cursor: pointer;
 }

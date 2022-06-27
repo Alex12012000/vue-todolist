@@ -31,6 +31,10 @@ var app = new Vue ({
             this.newInput = {text: this.userInput, done: false} 
             this.todos.push(this.newInput);
             this.userInput = ''
+        },
+        // BONUS 2
+        switchDone(elementIndex) {
+            this.todos[elementIndex].done = !this.todos[elementIndex].done;
         }
-    },
+    }
 })
