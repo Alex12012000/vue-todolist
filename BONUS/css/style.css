@@ -1,0 +1,53 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Common */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+/* Input section */
+input {
+    width: 30%;
+    margin: 20px 10px;
+    padding: 5px;
+    border-radius: 20px;
+    border: 1px solid black;
+
+}
+
+button {
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+
+/* ToDo list */
+.list {
+    margin: 20px;
+    background-color: #f4f7f7;
+    padding: 20px 40px;
+}
+
+
+li {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+}
+
+.active {
+    text-decoration: line-through;
+}
+
+i {
+    cursor: pointer;
+}
