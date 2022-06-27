@@ -1,0 +1,22 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Common */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ToDo list */
+li {
+    list-style-type: none;
+}
+
+.active {
+    text-decoration: line-through;
+}

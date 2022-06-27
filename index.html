@@ -12,7 +12,21 @@
 <body>
     
     <div id="root">
-        
+        <div class="container">
+            <!-- Input section -->
+            <div class="input-div">
+                <input type="text">
+                <button>Aggiungi</button>
+            </div>
+            <!-- list -->
+            <ul>
+                <li v-for="todo in todos" >
+                    <span :class="{ 'active': todo.done}">{{todo.text}}</span>
+                </li>
+            </ul>
+        </div>
+
+
     </div>
     
     <script src="js/main.js"></script>
