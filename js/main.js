@@ -20,5 +20,10 @@ var app = new Vue ({
             done: true
         },
     ],
+    },
+    methods: {
+        removeOnClick(elementIndex) {
+            this.todos.splice(elementIndex, 1);
+        }
     }
 })
