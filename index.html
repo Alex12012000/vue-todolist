@@ -15,8 +15,8 @@
         <div class="container">
             <!-- Input section -->
             <div class="input-div">
-                <input type="text">
-                <button>Aggiungi</button>
+                <input type="text" v-model="userInput">
+                <button @click="addOnClick()">Aggiungi</button>
             </div>
             <!-- list -->
             <ul>
