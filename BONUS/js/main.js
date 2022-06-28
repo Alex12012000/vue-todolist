@@ -28,8 +28,11 @@ var app = new Vue ({
             this.todos.splice(elementIndex, 1);
         },
         addOnClick() {
-            this.newInput = {text: this.userInput, done: false} 
-            this.todos.push(this.newInput);
+            const trimmedString = this.userInput.trim();
+            this.newInput = {text: trimmedString, done: false} 
+            if(trimmedString.length > 0) {
+                this.todos.push(this.newInput);
+            }
             this.userInput = ''
         },
         // BONUS 2
